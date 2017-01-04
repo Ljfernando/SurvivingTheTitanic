@@ -1,13 +1,14 @@
 ---
-title: "TitanicSurvival"
+title: "Surviving The Titanic"
 author: "Lance J. Fernando"
+output: html_document
 ---
 
 
 First lets import the training and testing sets
 ```{r}
-tit_test <- read.csv("/Users/lancefernando/Desktop/DataMining/PythonProjects/Titanic/titanic_test.csv", header = TRUE)
-tit_train <- read.csv("/Users/lancefernando/Desktop/DataMining/PythonProjects/Titanic/titanic_train.csv", header = TRUE)
+tit_test <- read.csv("https://kaggle2.blob.core.windows.net/competitions-data/kaggle/3136/test.csv?sv=2015-12-11&sr=b&sig=UEk77hhh9lj6QXdG8qPAFZ1Kd2z2ESorS1z536w6lfc%3D&se=2017-01-07T00%3A08%3A58Z&sp=r", header = TRUE)
+tit_train <- read.csv("https://kaggle2.blob.core.windows.net/competitions-data/kaggle/3136/train.csv?sv=2015-12-11&sr=b&sig=R8dfGCVIrV7uCymeDkXeQob5SJkTvMtI9cj02l8zmBo%3D&se=2017-01-07T00%3A08%3A42Z&sp=r", header = TRUE)
 head(tit_train)
 ```
 
